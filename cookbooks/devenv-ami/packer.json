@@ -27,12 +27,14 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu"
+
   }],
+
   "provisioners": [
     {
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks"],
-      "run_list": ["devenv::default"]
+      "run_list": ["devenv-ami"]
     }
   ]
 }
