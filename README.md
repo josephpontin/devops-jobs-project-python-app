@@ -1,5 +1,17 @@
 # Dev Environment
 
+## Cookbooks
+
+There are two cookbooks in this project:
+
+### devenv
+
+This cookbook will set up a local development environment with the app installed (see below). It can be ran using `vagrant up`.
+
+### devenv-ami
+
+This cookbook is similar to the devenv, but has a packer.json file to build an AMI, that preinstalls python3, pip3 and the necessary modules for the app. It does not install the app or set up any of the necessary folder structures.
+
 ## To launch the dev environment.
 
 - From this directory run `vagrant up`.
@@ -9,4 +21,3 @@
   - Use `python3 main.py`
 - To reun the tests:
   - Use `python3 -m pytest tests`
-  
