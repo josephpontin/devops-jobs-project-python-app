@@ -59,3 +59,7 @@ end
 file '/home/ubuntu/code/requirements.txt' do
   action :delete
 end
+
+directory '/home/ubuntu/code/' do
+  action :delete
+end
