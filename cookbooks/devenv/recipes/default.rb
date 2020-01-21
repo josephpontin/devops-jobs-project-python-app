@@ -21,9 +21,22 @@ file '/home/ubuntu/code/src/itjobswatch_html_readers/__init__.py' do
   action :create
 end
 
-# Creates Downloads folder to output to
-directory '/home/vagrant/Downloads' do
+# Ensures pytest has write permission to path of Downloads folder
+
+directory '/' do
   action :create
+  mode '0777'
+end
+
+directory '/vagrant/' do
+  action :create
+  mode '0777'
+end
+
+# Creates Downloads folder to output to
+directory '/home/vagrant/Downloads/' do
+  action :create
+  mode '0777'
 end
 
 # Installs requirements as listed in requirements.txt
