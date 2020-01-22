@@ -21,3 +21,7 @@ This cookbook is similar to the devenv, but has a packer.json file to build an A
   - Use `python3 main.py`
 - To reun the tests:
   - Use `python3 -m pytest tests`
+
+## Pipeline
+
+A CI pipeline has been created meaning that if we push to the dev branch, the tests will be run. 
