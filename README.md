@@ -24,4 +24,4 @@ This cookbook is similar to the devenv, but has a packer.json file to build an A
 
 ## Pipeline
 
-A CI pipeline has been created meaning that if we push to the dev branch, the tests will be run. 
+A CI pipeline has been created meaning that if we push to the dev branch, the tests will be run on the slave node.
