@@ -19,7 +19,7 @@ This cookbook is similar to the devenv, but has a packer.json file to build an A
 - Access the folder where the code is installed by using `cd /home/ubuntu/code`.
 - To run the code:
   - Use `python3 main.py`
-- To reun the tests:
+- To run the tests:
   - Use `python3 -m pytest tests`
 
 ## Pipeline
