@@ -1,7 +1,8 @@
 {
   "variables": {
     "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
-    "aws_secret_key": "{{env `AWS_SECRET_KEY_ID`}}"
+    "aws_secret_key": "{{env `AWS_SECRET_KEY_ID`}}",
+    "private_key": "{{env `PRIVATE_KEY`}}"
   },
   "builders": [{
     "ami_name": "joseph-pontin-python-test-{{timestamp}}",
@@ -13,7 +14,7 @@
     "subnet_id": "subnet-05f17c9de25b45b3a",
     "associate_public_ip_address": "true",
     "ssh_keypair_name": "joseph-eng-48-first-key",
-    "ssh_private_key_file": "{{env `PRIVATE_KEY`}}",
+    "ssh_private_key_file": "{{user `private_key`}}",
 
     "region": "eu-west-1",
     "source_ami_filter": {
