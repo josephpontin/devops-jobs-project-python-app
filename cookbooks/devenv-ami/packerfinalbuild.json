@@ -14,7 +14,7 @@
     "subnet_id": "subnet-05f17c9de25b45b3a",
     "associate_public_ip_address": "true",
     "ssh_keypair_name": "joseph-eng-48-first-key",
-    "ssh_private_key_file": "joseph-eng-48-first-key.pem",
+    "ssh_private_key_file": "/home/ubuntu/.ssh/joseph-eng-48-first-key.pem",
 
     "region": "eu-west-1",
     "source_ami_filter": {
